@@ -87,7 +87,7 @@ export function BMIResult() {
         </Paragraph>
         <Paragraph>Protein: {macros.protein}%</Paragraph>
         <Paragraph>Carbs: {macros.carbs}%</Paragraph>
-        <Paragraph>Fats: {macros.fats}%</Paragraph>
+        <Paragraph>Fats: {macros.fat}%</Paragraph>
       </Card>
     </YStack>
   )

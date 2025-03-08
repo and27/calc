@@ -9,7 +9,6 @@ export function HomeScreen() {
       gap="$4"
       p="$6"
       bg="$background"
-      maxW={500}
       mx="auto"
     >
       <H1>BMI Calculator</H1>
