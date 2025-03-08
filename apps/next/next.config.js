@@ -12,6 +12,7 @@ const disableExtraction =
 
 const plugins = [
   withTamagui({
+    debug: true,
     config: '../../packages/config/src/tamagui.config.ts',
     components: ['tamagui', '@my/ui'],
     appDir: true,
@@ -31,6 +32,7 @@ const plugins = [
 module.exports = () => {
   /** @type {import('next').NextConfig} */
   let config = {
+    reactStrictMode: false,
     typescript: {
       ignoreBuildErrors: true,
     },
@@ -46,6 +48,7 @@ module.exports = () => {
       'expo-linking',
       'expo-constants',
       'expo-modules-core',
+      '@my/ui'
     ],
     experimental: {
       scrollRestoration: true,

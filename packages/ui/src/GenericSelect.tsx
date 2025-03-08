@@ -1,5 +1,5 @@
 import { Check, ChevronDown } from '@tamagui/lucide-icons'
-import { Select, Adapt, Sheet, YStack, XStack, Label } from 'tamagui'
+import { Select, Adapt, Sheet, YStack, Label } from 'tamagui'
 
 type Option = { label: string; value: string }
 
@@ -32,9 +32,9 @@ export function GenericSelect({ label, value, options, onChange }: SelectProps) 
         </Adapt>
 
         <Select.Content zIndex={200000}>
-          <Select.Viewport minWidth={200}>
+          <Select.Viewport minW={200}>
             {options.map((item, i) => (
-              <Select.Item key={item.value} value={item.value}>
+              <Select.Item index={i} key={item.value} value={item.value}>
                 <Select.ItemText>{item.label}</Select.ItemText>
                 <Select.ItemIndicator marginLeft="auto">
                   <Check size={16} />

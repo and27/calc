@@ -27,9 +27,7 @@ export default class Document extends NextDocument {
       <style
         key="tamagui-css"
         dangerouslySetInnerHTML={{
-          __html: config.getCSS({
-            exclude: process.env.NODE_ENV === 'development' ? null : 'design-system',
-          }),
+          __html: config.getCSS(),
         }}
       />,
       <style
